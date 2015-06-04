@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 - FactoryMethod", "FactoryMethod\1 - FactoryMethod.csproj", "{C0E53A98-0498-4A25-BE12-FD8BA61B9F07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - ServiceLocator", "ServiceLocator\2 - ServiceLocator.csproj", "{9E442F4E-F29C-4D3D-A0E9-295DE99C9E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 - DependencyInjection", "DependencyInjection\3 - DependencyInjection.csproj", "{A38B6843-5B99-4D9E-9726-4ACF8B73E16B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{52666A35-5363-4287-885C-F2E0F80B37D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceImplementations", "ServiceImplementations\ServiceImplementations.csproj", "{56E2BB98-610F-444E-87ED-A3690F77B8BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52666A35-5363-4287-885C-F2E0F80B37D5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{52666A35-5363-4287-885C-F2E0F80B37D5}.Debug|x86.Build.0 = Debug|Any CPU
+		{52666A35-5363-4287-885C-F2E0F80B37D5}.Release|x86.ActiveCfg = Release|Any CPU
+		{52666A35-5363-4287-885C-F2E0F80B37D5}.Release|x86.Build.0 = Release|Any CPU
+		{56E2BB98-610F-444E-87ED-A3690F77B8BE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56E2BB98-610F-444E-87ED-A3690F77B8BE}.Debug|x86.Build.0 = Debug|Any CPU
+		{56E2BB98-610F-444E-87ED-A3690F77B8BE}.Release|x86.ActiveCfg = Release|Any CPU
+		{56E2BB98-610F-444E-87ED-A3690F77B8BE}.Release|x86.Build.0 = Release|Any CPU
+		{9E442F4E-F29C-4D3D-A0E9-295DE99C9E9F}.Debug|x86.ActiveCfg = Debug|x86
+		{9E442F4E-F29C-4D3D-A0E9-295DE99C9E9F}.Debug|x86.Build.0 = Debug|x86
+		{9E442F4E-F29C-4D3D-A0E9-295DE99C9E9F}.Release|x86.ActiveCfg = Release|x86
+		{9E442F4E-F29C-4D3D-A0E9-295DE99C9E9F}.Release|x86.Build.0 = Release|x86
+		{A38B6843-5B99-4D9E-9726-4ACF8B73E16B}.Debug|x86.ActiveCfg = Debug|x86
+		{A38B6843-5B99-4D9E-9726-4ACF8B73E16B}.Debug|x86.Build.0 = Debug|x86
+		{A38B6843-5B99-4D9E-9726-4ACF8B73E16B}.Release|x86.ActiveCfg = Release|x86
+		{A38B6843-5B99-4D9E-9726-4ACF8B73E16B}.Release|x86.Build.0 = Release|x86
+		{C0E53A98-0498-4A25-BE12-FD8BA61B9F07}.Debug|x86.ActiveCfg = Debug|x86
+		{C0E53A98-0498-4A25-BE12-FD8BA61B9F07}.Debug|x86.Build.0 = Debug|x86
+		{C0E53A98-0498-4A25-BE12-FD8BA61B9F07}.Release|x86.ActiveCfg = Release|x86
+		{C0E53A98-0498-4A25-BE12-FD8BA61B9F07}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
