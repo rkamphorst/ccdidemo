@@ -43,6 +43,7 @@
     <Compile Include="AlleBerekeningen.cs" />
     <Compile Include="LazyBerekening.cs" />
     <Compile Include="GenereerBerekeningen.cs" />
+    <Compile Include="GenereerAlleBerekeningen.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

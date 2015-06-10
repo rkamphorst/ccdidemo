@@ -18,6 +18,7 @@ namespace DependencyInjection
             // ShowAlleBerekeningen();
             // ShowLazyBerekening();
             // ShowGenereerBerekeningen();
+            // ShowGenereerAlleBerekeningen();
         }
 
         static void Start() 
@@ -65,6 +66,11 @@ namespace DependencyInjection
         static void ShowGenereerBerekeningen() 
         {
             Container.Resolve<GenereerBerekeningen>().ShowBerekening().Wait();
+        }
+
+        static void ShowGenereerAlleBerekeningen() 
+        {
+            Container.Resolve<GenereerAlleBerekeningen>().ShowBerekening().Wait();
         }
     }
 
