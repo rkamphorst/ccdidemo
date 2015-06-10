@@ -14,10 +14,10 @@ namespace DependencyInjection
         public static void Main(string[] args)
         {
             Start();
-            //ShowBerekening().Wait();
-            ShowAlleBerekeningen();
-            //ShowLazyBerekening();
-            //ShowGenereerBerekeningen();
+            ShowBerekening();
+            // ShowAlleBerekeningen();
+            // ShowLazyBerekening();
+            // ShowGenereerBerekeningen();
         }
 
         static void Start() 
@@ -31,11 +31,11 @@ namespace DependencyInjection
             Container = builder.Build();
         }
 
-        static async Task ShowBerekening() 
+        static void ShowBerekening() 
         {
             var b = Container.Resolve<IBerekening>();
             b.Parameters = new int[] { 10, 20, 30, 40 };
-            await b.BerekenAsync();
+            b.BerekenAsync().Wait();
             Console.WriteLine("Resultaat van berekening {0} op {1}: {2}", 
                 b.Naam,
                 string.Join(", ", b.Parameters), 
@@ -69,49 +69,4 @@ namespace DependencyInjection
     }
 
 
-
-
-
-
-
-
-
-
-
-    #if BLA
-    class MainClass
-    {
-    public static IContainer Container { get; private set; }
-
-    public static void Main(string[] args)
-    {
-    Start();
-    //ShowBerekening().Wait();
-
-    Container.Resolve<Berekenaar>().ShowBerekening().Wait();
-
-    }
-
-    static void Start() 
-    {
-    var builder = new ContainerBuilder();
-    //builder.RegisterSource(new AnyConcreteTypeNotAlreadyRegisteredSource());
-    builder.RegisterType<BerekeningDollarSomInEuros>().As<IBerekening>();
-    builder.RegisterType<LocalEurosPerDollar>().As<IEurosPerDollar>();
-    Container = builder.Build();
-    }
-
-    static async Task ShowBerekening() {
-    var b = Container.Resolve<IBerekening>();
-    b.Parameters = new int[] { 10, 20, 30, 40 };
-    await b.BerekenAsync();
-    Console.WriteLine("Resultaat van berekening {0} op {1}: {2}", 
-    b.Naam,
-    string.Join(", ", b.Parameters), 
-    b.Resultaat
-    );
-    }
-
-    }
-    #endif
 }
